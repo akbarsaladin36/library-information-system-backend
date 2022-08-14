@@ -1,7 +1,7 @@
 {
-  "name": "backend-boilerplate",
+  "name": "backend-library-information-system",
   "version": "1.0.0",
-  "description": "Backend Boilerplate",
+  "description": "Backend Library Information System",
   "main": "server.js",
   "scripts": {
     "dev": "npx nodemon ./src/server.js"

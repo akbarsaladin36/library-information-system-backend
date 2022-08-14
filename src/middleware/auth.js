@@ -25,10 +25,18 @@ module.exports = {
   },
 
   isAdmin: (req, res, next) => {
-    if (req.decodeToken.user_status === 'admin') {
+    if (req.decodeToken.user_role === 'admin') {
       next()
     } else {
       return helper.response(res, 403, 'this page can be accessed by admin!')
+    }
+  },
+
+  isMember: (req, res, next) => {
+    if(req.decodeToken.user_role === 'member') {
+      next()
+    } else {
+      return helper.response(res, 403, 'this page can be accessed by member')
     }
   }
 }
