@@ -46,6 +46,7 @@ JWT_SECRETKEY = <YOUR JWT SECRET KEY>
 1. Login and Register API
 2. CRUD for Users
 3. CRUD for Books
+4. CRUD for Cart Books
 
 
 ## License
